@@ -1,0 +1,78 @@
+/* Container for the registration form */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Styling for the form */
+  .register-form {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  /* Heading inside the form */
+  .register-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333333;
+  }
+  
+  /* Input fields */
+  .inputbox {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focus effect on input fields */
+  .inputbox:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Submit button */
+  .register-form input[type="submit"] {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the submit button */
+  .register-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  .register-form div {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: red;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 480px) {
+    .register-form {
+      width: 90%;
+    }
+  }
+  

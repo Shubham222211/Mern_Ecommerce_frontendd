@@ -1,0 +1,113 @@
+/* Container for product cards */
+.productDiv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Product card styling */
+.productDiv > div {
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 30%; /* Default width for larger screens */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Image styling */
+.productDiv img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Search input styling */
+.searchinput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin: 0 auto; /* Center-align for responsiveness */
+  display: block;
+  max-width: 90%; /* Prevent overflow on smaller screens */
+}
+
+.searchinput:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Sort dropdown styling */
+.sortproduct {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: block;
+  margin: 10px auto;
+}
+
+.sortproduct:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive styling for smaller devices */
+@media screen and (max-width: 768px) {
+  .productDiv > div {
+    width: 45%; /* Adjust width for tablets */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .productDiv > div {
+    width: 90%; /* Full width for mobile devices */
+  }
+
+  .searchinput,
+  .sortproduct {
+    width: 100%; /* Full width for inputs and dropdowns */
+    max-width: unset;
+  }
+}
+
+/* Label styling for accessibility */
+label[for="sortOrder"] {
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+
+/* Add to Cart button styling */
+.productCard button {
+  background-color: #007bff; /* Primary blue color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.productCard button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Responsive styling for Add to Cart button */
+@media screen and (max-width: 480px) {
+  .productCard button {
+    width: 100%; /* Full width on mobile devices */
+    padding: 12px; /* Slightly larger padding for easier tapping */
+    font-size: 16px; /* Larger font for better visibility */
+  }
+}

@@ -1,0 +1,50 @@
+/* Styling for the container */
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Styling for the image */
+.image {
+    width: 800px;
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the image */
+.image:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for buttons */
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Button active effect */
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
